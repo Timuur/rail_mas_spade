@@ -1,0 +1,395 @@
+{
+  "schedule": [
+    {
+      "order_id": "O3",
+      "proposer": "ALPHA",
+      "proposer_jid": "station-alpha@desktop-at04h0d",
+      "loco_id": "L-AL-2",
+      "wagons": [
+        {
+          "id": "W-AL-H1",
+          "capacity_t": 70.0,
+          "owner": "ALPHA"
+        }
+      ],
+      "wagon_moves": [],
+      "empty_path": [
+        "ALPHA"
+      ],
+      "empty_distance_km": 0.0,
+      "loaded_path": [
+        "ALPHA",
+        "CHARLIE"
+      ],
+      "loaded_distance_km": 180.0,
+      "total_time_h": 2.25,
+      "total_cost": 810.0,
+      "depart_h": 10.0,
+      "arrive_h": 12.25
+    },
+    {
+      "order_id": "O2",
+      "proposer": "BRAVO",
+      "proposer_jid": "station-bravo@desktop-at04h0d",
+      "loco_id": "L-BR-1",
+      "wagons": [
+        {
+          "id": "W-BR-L1",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        },
+        {
+          "id": "W-BR-L2",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        }
+      ],
+      "wagon_moves": [],
+      "empty_path": [
+        "BRAVO"
+      ],
+      "empty_distance_km": 0.0,
+      "loaded_path": [
+        "BRAVO",
+        "DELTA",
+        "ECHO"
+      ],
+      "loaded_distance_km": 360.0,
+      "total_time_h": 5.14,
+      "total_cost": 1728.0,
+      "depart_h": 25.0,
+      "arrive_h": 30.14
+    },
+    {
+      "order_id": "O7",
+      "proposer": "BRAVO",
+      "proposer_jid": "station-bravo@desktop-at04h0d",
+      "loco_id": "L-BR-1",
+      "wagons": [
+        {
+          "id": "W-BR-L1",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        },
+        {
+          "id": "W-BR-L2",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        },
+        {
+          "id": "W-BR-L1",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        }
+      ],
+      "wagon_moves": [
+        {
+          "owner": "BRAVO",
+          "wagon_id": "W-BR-L1",
+          "empty_path": [
+            "BRAVO",
+            "CHARLIE"
+          ],
+          "empty_distance_km": 90.0,
+          "arrive_origin_h": 1.5,
+          "repos_cost": 0.0
+        },
+        {
+          "owner": "BRAVO",
+          "wagon_id": "W-BR-L2",
+          "empty_path": [
+            "BRAVO",
+            "CHARLIE"
+          ],
+          "empty_distance_km": 90.0,
+          "arrive_origin_h": 2.0,
+          "repos_cost": 0.0
+        },
+        {
+          "owner": "BRAVO",
+          "wagon_id": "W-BR-L1",
+          "empty_path": [
+            "BRAVO",
+            "CHARLIE"
+          ],
+          "empty_distance_km": 90.0,
+          "arrive_origin_h": 1.5,
+          "repos_cost": 45.0
+        }
+      ],
+      "empty_path": [
+        "BRAVO",
+        "CHARLIE"
+      ],
+      "empty_distance_km": 90.0,
+      "loaded_path": [
+        "CHARLIE",
+        "DELTA"
+      ],
+      "loaded_distance_km": 130.0,
+      "total_time_h": 3.36,
+      "total_cost": 1101.0,
+      "depart_h": 15.0,
+      "arrive_h": 18.36
+    },
+    {
+      "order_id": "O4",
+      "proposer": "DELTA",
+      "proposer_jid": "station-delta@desktop-at04h0d",
+      "loco_id": "L-DE-1",
+      "wagons": [
+        {
+          "id": "W-DE-B1",
+          "capacity_t": 80.0,
+          "owner": "DELTA"
+        },
+        {
+          "id": "W-DE-B2",
+          "capacity_t": 70.0,
+          "owner": "DELTA"
+        }
+      ],
+      "wagon_moves": [],
+      "empty_path": [
+        "DELTA"
+      ],
+      "empty_distance_km": 0.0,
+      "loaded_path": [
+        "DELTA",
+        "CHARLIE",
+        "ALPHA"
+      ],
+      "loaded_distance_km": 310.0,
+      "total_time_h": 4.11,
+      "total_cost": 1426.0,
+      "depart_h": 15.0,
+      "arrive_h": 19.11
+    },
+    {
+      "order_id": "O1",
+      "proposer": "ALPHA",
+      "proposer_jid": "station-alpha@desktop-at04h0d",
+      "loco_id": "L-AL-1",
+      "wagons": [
+        {
+          "id": "W-AL-B1",
+          "capacity_t": 70.0,
+          "owner": "ALPHA"
+        },
+        {
+          "id": "W-AL-B2",
+          "capacity_t": 70.0,
+          "owner": "ALPHA"
+        },
+        {
+          "id": "W-AL-B1",
+          "capacity_t": 70.0,
+          "owner": "ALPHA"
+        }
+      ],
+      "wagon_moves": [],
+      "empty_path": [
+        "ALPHA"
+      ],
+      "empty_distance_km": 0.0,
+      "loaded_path": [
+        "ALPHA",
+        "CHARLIE",
+        "DELTA"
+      ],
+      "loaded_distance_km": 310.0,
+      "total_time_h": 4.11,
+      "total_cost": 1550.0,
+      "depart_h": 0.0,
+      "arrive_h": 4.11
+    },
+    {
+      "order_id": "O5",
+      "proposer": "DELTA",
+      "proposer_jid": "station-delta@desktop-at04h0d",
+      "loco_id": "L-DE-1",
+      "wagons": [
+        {
+          "id": "W-EC-F1",
+          "capacity_t": 80.0,
+          "owner": "ECHO"
+        },
+        {
+          "id": "W-BR-F1",
+          "capacity_t": 80.0,
+          "owner": "BRAVO"
+        }
+      ],
+      "wagon_moves": [
+        {
+          "owner": "ECHO",
+          "wagon_id": "W-EC-F1",
+          "empty_path": [
+            "ECHO"
+          ],
+          "empty_distance_km": 0.0,
+          "arrive_origin_h": 10.0,
+          "repos_cost": 0.0
+        },
+        {
+          "owner": "BRAVO",
+          "wagon_id": "W-BR-F1",
+          "empty_path": [
+            "BRAVO",
+            "DELTA",
+            "ECHO"
+          ],
+          "empty_distance_km": 360.0,
+          "arrive_origin_h": 6.14,
+          "repos_cost": 180.0
+        }
+      ],
+      "empty_path": [
+        "DELTA",
+        "ECHO"
+      ],
+      "empty_distance_km": 160.0,
+      "loaded_path": [
+        "ECHO",
+        "DELTA",
+        "BRAVO"
+      ],
+      "loaded_distance_km": 360.0,
+      "total_time_h": 7.43,
+      "total_cost": 2572.0,
+      "depart_h": 19.61,
+      "arrive_h": 27.04
+    },
+    {
+      "order_id": "O5",
+      "proposer": "ECHO",
+      "proposer_jid": "station-echo@desktop-at04h0d",
+      "loco_id": "L-EC-1",
+      "wagons": [
+        {
+          "id": "W-EC-F1",
+          "capacity_t": 80.0,
+          "owner": "ECHO"
+        },
+        {
+          "id": "W-EC-F1",
+          "capacity_t": 80.0,
+          "owner": "ECHO"
+        }
+      ],
+      "wagon_moves": [],
+      "empty_path": [
+        "ECHO"
+      ],
+      "empty_distance_km": 0.0,
+      "loaded_path": [
+        "ECHO",
+        "DELTA",
+        "BRAVO"
+      ],
+      "loaded_distance_km": 360.0,
+      "total_time_h": 5.14,
+      "total_cost": 1764.0,
+      "depart_h": 10.0,
+      "arrive_h": 15.14
+    },
+    {
+      "order_id": "O6",
+      "proposer": "ALPHA",
+      "proposer_jid": "station-alpha@26.9.58.34",
+      "loco_id": "L-AL-2",
+      "wagons": [
+        {
+          "id": "W-AL-H1",
+          "type": "hazard",
+          "capacity_t": 70.0,
+          "owner": "ALPHA"
+        }
+      ],
+      "wagon_moves": [
+        {
+          "owner": "ALPHA",
+          "wagon_id": "W-AL-H1",
+          "empty_path": [
+            "ALPHA"
+          ],
+          "empty_distance_km": 0.0,
+          "arrive_origin_h": 1.5,
+          "repos_cost": 0.0
+        }
+      ],
+      "empty_path": [
+        "ALPHA",
+        "ECHO"
+      ],
+      "empty_distance_km": 400.0,
+      "loaded_path": [
+        "ECHO",
+        "DELTA",
+        "BRAVO"
+      ],
+      "loaded_distance_km": 360.0,
+      "total_time_h": 10.14,
+      "total_cost": 3420.0,
+      "depart_h": 2.0,
+      "arrive_h": 12.14
+    },
+    {
+      "order_id": "O2",
+      "proposer": "ALPHA",
+      "proposer_jid": "station-alpha@26.9.58.34",
+      "loco_id": "L-AL-2",
+      "wagons": [
+        {
+          "id": "W-BR-L1",
+          "type": "liquid",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        },
+        {
+          "id": "W-BR-L2",
+          "type": "liquid",
+          "capacity_t": 60.0,
+          "owner": "BRAVO"
+        }
+      ],
+      "wagon_moves": [
+        {
+          "owner": "BRAVO",
+          "wagon_id": "W-BR-L1",
+          "empty_path": [
+            "BRAVO"
+          ],
+          "empty_distance_km": 0.0,
+          "arrive_origin_h": 0.0,
+          "repos_cost": 0.0
+        },
+        {
+          "owner": "BRAVO",
+          "wagon_id": "W-BR-L2",
+          "empty_path": [
+            "BRAVO"
+          ],
+          "empty_distance_km": 0.0,
+          "arrive_origin_h": 0.5,
+          "repos_cost": 0.0
+        }
+      ],
+      "empty_path": [
+        "ALPHA",
+        "BRAVO"
+      ],
+      "empty_distance_km": 120.0,
+      "loaded_path": [
+        "BRAVO",
+        "DELTA",
+        "ECHO"
+      ],
+      "loaded_distance_km": 360.0,
+      "total_time_h": 7.14,
+      "total_cost": 2160.0,
+      "depart_h": 25.0,
+      "arrive_h": 32.14
+    }
+  ]
+}

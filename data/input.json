@@ -1,0 +1,241 @@
+{
+  "stations": [
+    {
+      "id": "ALPHA",
+      "jid": "station-alpha@26.9.58.34",
+      "locomotives": [
+        { "id": "L-AL-1", "max_tonnage": 300, "cost_per_km": 5.0, "available_from_h": 0.0 },
+        { "id": "L-AL-2", "max_tonnage": 200, "cost_per_km": 4.5, "available_from_h": 2.0 }
+      ],
+      "wagons": [
+        {
+          "id": "W-AL-B1",
+          "type": "bulk",
+          "capacity_t": 70, "available_from_h": 0.0 },
+        {
+          "id": "W-AL-B2",
+          "type": "bulk",
+          "capacity_t": 70, "available_from_h": 0.0 },
+        {
+          "id": "W-AL-H1",
+          "type": "hazard",
+          "capacity_t": 70, "available_from_h": 1.5 }
+      ]
+    },
+    {
+      "id": "BRAVO",
+      "jid": "station-bravo@26.9.58.34",
+      "locomotives": [
+        {
+          "id": "L-BR-1",
+          "max_tonnage": 220,
+          "cost_per_km": 4.8
+        , "available_from_h": 0.5 }
+      ],
+      "wagons": [
+        {
+          "id": "W-BR-L1",
+          "type": "liquid",
+          "capacity_t": 60
+        , "available_from_h": 0.0 },
+        {
+          "id": "W-BR-L2",
+          "type": "liquid",
+          "capacity_t": 60
+        , "available_from_h": 0.5 },
+        {
+          "id": "W-BR-F1",
+          "type": "flat",
+          "capacity_t": 80
+        , "available_from_h": 1.0 }
+      ]
+    },
+    {
+      "id": "CHARLIE",
+      "jid": "station-charlie@26.9.58.34",
+      "locomotives": [
+        {
+          "id": "L-CH-1",
+          "max_tonnage": 250,
+          "cost_per_km": 5.2
+        , "available_from_h": 2.0 }
+      ],
+      "wagons": [
+        {
+          "id": "W-CH-B1",
+          "type": "bulk",
+          "capacity_t": 80
+        , "available_from_h": 4.0 },
+        {
+          "id": "W-CH-H1",
+          "type": "hazard",
+          "capacity_t": 60
+        , "available_from_h": 8.0 }
+      ]
+    },
+    {
+      "id": "DELTA",
+      "jid": "station-delta@26.9.58.34",
+      "locomotives": [
+        {
+          "id": "L-DE-1",
+          "max_tonnage": 250,
+          "cost_per_km": 4.6
+        , "available_from_h": 3.0 }
+      ],
+      "wagons": [
+        {
+          "id": "W-DE-B1",
+          "type": "bulk",
+          "capacity_t": 80
+        , "available_from_h": 0.0 },
+        {
+          "id": "W-DE-B2",
+          "type": "bulk",
+          "capacity_t": 70
+        , "available_from_h": 0.0 }
+      ]
+    },
+    {
+      "id": "ECHO",
+      "jid": "station-echo@26.9.58.34",
+      "locomotives": [
+        {
+          "id": "L-EC-1",
+          "max_tonnage": 260,
+          "cost_per_km": 4.9
+        , "available_from_h": 2.0 }
+      ],
+      "wagons": [
+        {
+          "id": "W-EC-F1",
+          "type": "flat",
+          "capacity_t": 80
+        , "available_from_h": 10.0 },
+        {
+          "id": "W-EC-L1",
+          "type": "liquid",
+          "capacity_t": 60
+        , "available_from_h": 0.0 }
+      ]
+    }
+  ],
+  "graph": {
+    "edges": [
+      {
+        "u": "ALPHA",
+        "v": "BRAVO",
+        "distance_km": 120,
+        "speed_kmh": 60
+      },
+      {
+        "u": "BRAVO",
+        "v": "CHARLIE",
+        "distance_km": 90,
+        "speed_kmh": 60
+      },
+      {
+        "u": "CHARLIE",
+        "v": "DELTA",
+        "distance_km": 130,
+        "speed_kmh": 70
+      },
+      {
+        "u": "DELTA",
+        "v": "ECHO",
+        "distance_km": 160,
+        "speed_kmh": 70
+      },
+      {
+        "u": "ALPHA",
+        "v": "CHARLIE",
+        "distance_km": 180,
+        "speed_kmh": 80
+      },
+      {
+        "u": "BRAVO",
+        "v": "DELTA",
+        "distance_km": 200,
+        "speed_kmh": 70
+      },
+      {
+        "u": "ALPHA",
+        "v": "ECHO",
+        "distance_km": 400,
+        "speed_kmh": 80
+      }
+    ]
+  },
+  "orders": [
+    {
+      "id": "O1",
+      "from": "ALPHA",
+      "to": "DELTA",
+      "type": "bulk",
+      "tonnage": 180,
+      "earliest_depart_h": 0.0,
+      "latest_arrival_h": 60.0,
+      "priority": 1
+    },
+    {
+      "id": "O2",
+      "from": "BRAVO",
+      "to": "ECHO",
+      "type": "liquid",
+      "tonnage": 100,
+      "earliest_depart_h": 25.0,
+      "latest_arrival_h": 48.0,
+      "priority": 2
+    },
+    {
+      "id": "O3",
+      "from": "ALPHA",
+      "to": "CHARLIE",
+      "type": "hazard",
+      "tonnage": 60,
+      "earliest_depart_h": 10.0,
+      "latest_arrival_h": 24.0,
+      "priority": 3
+    },
+    {
+      "id": "O4",
+      "from": "DELTA",
+      "to": "ALPHA",
+      "type": "bulk",
+      "tonnage": 140,
+      "earliest_depart_h": 15.0,
+      "latest_arrival_h": 24.0,
+      "priority": 1
+    },
+    {
+      "id": "O5",
+      "from": "ECHO",
+      "to": "BRAVO",
+      "type": "flat",
+      "tonnage": 120,
+      "earliest_depart_h": 0.0,
+      "latest_arrival_h": 44.0,
+      "priority": 1
+    },
+    {
+      "id": "O6",
+      "from": "ECHO",
+      "to": "BRAVO",
+      "type": "hazard",
+      "tonnage": 12,
+      "earliest_depart_h": 0.0,
+      "latest_arrival_h": 12.0,
+      "priority": 4
+    },
+        {
+      "id": "O7",
+      "from": "CHARLIE",
+      "to": "DELTA",
+      "type": "liquid",
+      "tonnage": 175,
+      "earliest_depart_h": 15.0,
+      "latest_arrival_h": 90.0,
+      "priority": 2
+    }
+  ]
+}

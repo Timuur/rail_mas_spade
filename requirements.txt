@@ -1,0 +1,3 @@
+spade>=3.3.2
+networkx>=3.2
+pandas>=2.2

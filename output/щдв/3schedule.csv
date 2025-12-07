@@ -1,0 +1,5 @@
+order_id,proposer,loco_id,wagons,empty_distance_km,loaded_distance_km,total_time_h,total_cost,depart_h,arrive_h,empty_path,loaded_path
+O4,DELTA,L-DE-1,W-DE-B1;W-DE-B2,0.0,310.0,4.11,1426.0,15.0,19.11,DELTA,DELTA - CHARLIE - ALPHA
+O2,BRAVO,L-BR-1,W-BR-L1;W-BR-L2,0.0,360.0,5.14,1728.0,25.0,30.14,BRAVO,BRAVO - DELTA - ECHO
+O3,ALPHA,L-AL-2,W-AL-H1,0.0,180.0,2.25,810.0,10.0,12.25,ALPHA,ALPHA - CHARLIE
+O5,ECHO,L-EC-1,W-EC-F1;W-EC-F1,0.0,360.0,5.14,1764.0,10.0,15.14,ECHO,ECHO - DELTA - BRAVO
